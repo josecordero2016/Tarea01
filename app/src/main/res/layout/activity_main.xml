@@ -146,6 +146,7 @@
         android:layout_below="@+id/txtTelefono"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
+        android:onClick="Enviar"
         android:text="Enviar"
         android:textAlignment="center" />
 
