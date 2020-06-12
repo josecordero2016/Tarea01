@@ -114,7 +114,8 @@
         android:layout_toEndOf="@+id/textView5"
         android:ems="10"
         android:hint="Toque para editar"
-        android:inputType="date" />
+        android:inputType="date"
+        android:maxLength="10" />
 
     <RadioGroup
         android:id="@+id/rgUno"

@@ -22,6 +22,16 @@ public class ActivityInfo extends AppCompatActivity {
         //Recuperamos lo traído por el Bundle
         Bundle b = this.getIntent().getExtras();
         String valores[]=b.getStringArray("Valores");
+
+        //Validaciones
+        if(valores[0].equals("")) valores[0]="No especificado";
+        if(valores[2].equals("")) valores[2]="No especificado";
+        if(valores[3].equals("")) valores[3]="No especificado";
+        if(!valores[2].contains("/")&&!valores[2].contains("-")) valores[2]="Fecha no válida";
+        if(valores[2].length()>10) valores[2]="Fecha no válida";
+
+
+        //Ingresando los valores
         tv1.setText(valores[0]);
         tv2.setText(valores[1]);
         tv3.setText(valores[2]);
