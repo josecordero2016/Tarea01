@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, ActivityInfo.class);
         //Información a pasarse
         Bundle b = new Bundle();
-        String [] valores = {nombre,nacimiento,telefono,genero};
+        String [] valores = {nombre,genero, nacimiento,telefono};
         //Ingresando los datos al bundle
         b.putStringArray("Valores",valores);
         //Asignando el bundle en el intent
